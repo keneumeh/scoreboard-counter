@@ -1,36 +1,38 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        
-            <div class="container">
-                <div>
-                    <h1>HOME</h1>
-                    <div class='score-display' id='home-score'>0</div>
-                    <div class='increment-container'>
-                        <h3 onclick="addOneHome()">+1</h3>
-                        <h3 onclick="addTwoHome()">+2</h3>
-                        <h3 onclick="addThreeHome()">+3</h3>
-                    </div>
-                </div>
-                <div>
-                    <h1>GUEST</h1>
-                    <!-- <h1 id="guest-score">0</h1> -->
-                    <div class='score-display' id="guest-score">0</div>
-                    <div class='increment-container'>
-                        <h3 onclick="addOneGuest()">+1</h3>
-                        <h3 onclick="addTwoGuest()">+2</h3>
-                        <h3 onclick="addThreeGuest()">+3</h3>
-                    </div>
-                </div>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>HOME</h1>
+        <div class="score-display" id="home-score">0</div>
+        <div class="increment-container">
+          <h3 onclick="addOneHome()">+1</h3>
+          <h3 onclick="addTwoHome()">+2</h3>
+          <h3 onclick="addThreeHome()">+3</h3>
         </div>
-        <div class='new-game-btn'>
-            <h2 id='winner'></h2>
-            <h2>  </h2>
-                <button onclick="newGame()">New Game</button>
-                
+      </div>
+      <div>
+        <h1>AWAY</h1>
+        <!-- <h1 id="guest-score">0</h1> -->
+        <div class="score-display" id="guest-score">0</div>
+        <div class="increment-container">
+          <h3 onclick="addOneGuest()">+1</h3>
+          <h3 onclick="addTwoGuest()">+2</h3>
+          <h3 onclick="addThreeGuest()">+3</h3>
         </div>
-        <script src="index.js"></script>
-    </body>
+      </div>
+    </div>
+    <div class="game-options">
+      <h2 id="winner"></h2>
+      <h2></h2>
+      <button class="new-game-btn" onclick="newGame()">New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
