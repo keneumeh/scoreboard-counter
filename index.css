@@ -4,6 +4,8 @@ body {
     background-color: #1B244A;
     color: white;
     font-family: monospace;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .container {
